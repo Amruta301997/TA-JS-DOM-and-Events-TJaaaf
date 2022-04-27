@@ -5,9 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Form Validation 👇</title>
+    <script src="https://kit.fontawesome.com/1deaeb98fb.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
+
   <body>
    
+
+    <div>
+      <form class="container">
+        <div class="header">
+          <h2>Create Account</h2>
+        </div>
+        <div class="form-control success">
+          <label for="name">Username:</label>
+          <input
+            id="username"
+            type="text"
+            name="username"
+            placeholder="Username"
+          />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small></small>
+        </div>
+        <div class="form-control">
+          <label for="name">Name:</label>
+          <input
+            id="name1"
+            type="text"
+            name="name1"
+            placeholder="FullName"
+            required
+          />
+        </div>
+        <div class="form-control error">
+          <label for="email">Email: </label>
+          <input
+            id="email"
+            type="text"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Email must contain the symbol @</small>
+        </div>
+        <div class="form-control ">
+          <label for="phone">Phone-No.:</label>
+          <input
+            id="phone"
+            type="text"
+            name="phone"
+            placeholder="Enter your Phone Number"
+          />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Length of phone number can't be less than 7</small>
+        </div>
+
+        <div class="form-control">
+          <label for="text">Password:</label>
+          <input
+            id="password"
+            type="text"
+            name="password"
+            placeholder="Enter your Password"
+            required
+          />
+        </div>
+
+        <div class="form-control error">
+          <label for="text">Confirm Password:</label>
+          <input
+            id="confirm"
+            type="text"
+            name="confirm"
+            placeholder="Confirm Password"
+          />
+          <small>Password and confirm password must be same</small>
+        </div>
+        
+      
+        <button type="submit">Submit</button>
+      </form>
+      
+    </div>
+    
+
+
     <script src="./script.js"></script>
   </body>
 </html>
