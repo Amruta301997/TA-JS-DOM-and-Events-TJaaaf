@@ -1,0 +1,82 @@
+
+body {
+   
+    
+    padding: 0;
+    min-width: 300px;
+    text-align: center;
+}
+
+.button{
+    font-size: 1.25rem;
+    background-color: #3ab1ed;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    height: 2rem;
+    width: 4.5rem;
+    border-radius: 1rem;
+    /*animation:backgroundYellow 1s infinite;*/
+    cursor: pointer;
+}
+.row{
+    padding: 0px 5px;
+    pointer-events: none;
+}
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-color: rgb(231, 231, 96);
+    /*animation: moveCircleRight 1s infinite ;*/
+    pointer-events: none;
+
+}
+
+/*animations*/
+@keyframes moveCircleRight{
+    from {
+        left: 0;
+        background-color: rgb(231, 231, 96);
+    }
+    to{
+        left: 100%;
+        background-color: #3ab1ed;
+        transform:translateX(-100%) ;
+    }
+}
+
+@keyframes moveCircleLeft{
+    from {
+        left: 100%;
+        transform:translateX(-100%) ;
+        background-color: #3ab1ed;
+    }
+    to{
+        left: 0;
+        background-color: rgb(231, 231, 96);
+       
+    }
+}
+
+@keyframes backgroundYellow {
+    from{
+        background-color:#3ab1ed;
+    }
+    to{
+        background-color: rgb(231, 231, 96);
+    }
+}
+@keyframes backgroundBlue {
+    from{
+        background-color:rgb(231, 231, 96);
+    }
+    to{
+        background-color: #3ab1ed;
+    }
+}
